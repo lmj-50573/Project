@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" isErrorPage= "true" %>
+    pageEncoding="UTF-8" %>
+    <%@page isErrorPage= "true" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +12,7 @@
 	빠른 시일 내에 문제를 해결하겠습니다<br>
 	<hr>
 	<img src= "http://localhost:8005/studyjsp/6주차/underConstruction.jpg"><br>
+	
 	
 </body>
 </html>
