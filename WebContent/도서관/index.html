@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>동의과학대학교 도서관</title>
+
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" href="css/tooplate-style.css">  <!-- Templatemo style -->
+
+    
+</head>
+
+<body>
+  <div class="tm-main-content" id="top">
+    <div class="tm-top-bar-bg"></div>
+    <div class="tm-top-bar" id="tm-top-bar">
+<!-- Top Navbar -->
+    <div class="container">
+    <div class="row">
+
+    <nav class="navbar navbar-expand-lg narbar-light">
+    <a class="navbar-brand mr-auto" href="#">
+    <img src="img/logo.png" alt="Site logo">
+         Level
+    </a>
+    <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+    <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#tm-section-4">Portfolio</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#tm-section-5">Blog Entries</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#tm-section-6">Contact Us</a>
+    </li>
+    </ul>
+    </div>
+    </nav>
+    </div>
+    </div>
+    </div>
+    <div class="tm-section tm-bg-img" id="tm-section-1">
+    <div class="tm-bg-white ie-container-width-fix-2">
+    <div class="container ie-h-align-center-fix">
+    <div class="row">
+    <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
+    <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+    <div class="form-row tm-search-form-row">
+    <div class="form-group tm-form-element tm-form-element-100">
+    <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
+    <input name="city" type="text" class="form-control" id="inputCity" placeholder="Type your destination...">
+    </div>
+    <div class="form-group tm-form-element tm-form-element-50">
+    <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+    <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Check In">
+    </div>
+    <div class="form-group tm-form-element tm-form-element-50">
+    <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+    <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+    </div>
+    </div>
+    <div class="form-row tm-search-form-row">
+    <div class="form-group tm-form-element tm-form-element-2">
+    <select name="adult" class="form-control tm-select" id="adult">
+    <option value="">Adult</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </select>
+    <i class="fa fa-2x fa-user tm-form-element-icon"></i>
+    </div>
+    <div class="form-group tm-form-element tm-form-element-2">
+    <select name="children" class="form-control tm-select" id="children">
+    <option value="">Children</option>
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </select>
+    <i class="fa fa-user tm-form-element-icon tm-form-element-icon-small"></i>
+    </div>
+    <div class="form-group tm-form-element tm-form-element-2">
+    <select name="room" class="form-control tm-select" id="room">
+    <option value="">Room</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </select>
+    <i class="fa fa-2x fa-bed tm-form-element-icon"></i>
+    </div>
+    <div class="form-group tm-form-element tm-form-element-2">
+    <button type="submit" class="btn btn-primary tm-btn-search">Check Availability</button>
+    </div>
+    </div>
+    <div class="form-row clearfix pl-2 pr-2 tm-fx-col-xs">
+    <p class="tm-margin-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="#" class="ie-10-ml-auto ml-auto mt-1 tm-font-semibold tm-color-primary">Need Help?</a>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="tm-section-2">
+    <div class="container">
+    <div class="row">
+    <div class="col text-center">
+    <h2 class="tm-section-title">동의과학대학교 도서관 소개</h2>
+    <p class="tm-color-white tm-section-subtitle">시설별 이용안내</p>
+    <a href="#" class="tm-color-white tm-btn-white-bordered">Tel.860-3062</a>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="tm-section tm-position-relative">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="tm-section-down-arrow">
+    <polygon fill="#ee5057" points="0,0  100,0  50,60"></polygon>
+    </svg>
+    <div class="container tm-pt-5 tm-pb-4">
+    <div class="row text-center">
+        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
+        <i class="fa tm-fa-6x  tm-color-primary tm-margin-b-20"><img src="img/1.PNG"></i>
+        <h3 class="tm-color-primary tm-article-title-1">일반열람실</h3>
+        <p>제1, 2열람실 및 특별열람실을 학생들이 언제든지 이용할 수 있도록 연중 무휴 개방하고 있으며 입구의 좌석발급기에서 좌석표 발급 후 이용 가능합니다.</p>
+        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">위치 : 정보관 4층</a>
+
+        </article>
+        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
+        <i class="fa tm-fa-6x tm-color-primary tm-margin-b-20"><img src="img/2.PNG"></i>
+        <h3 class="tm-color-primary tm-article-title-1">아레테 홀</h3>
+        <p>신간, 베스트셀러, 최근 소설, 여행, 취업, 만화, 수필, 취미, 역사 등 테마별 단행본과 이용자 열람공간, 시네마 존 등이 있어 책과 휴식을 함께 할 수 있습니다.</p>
+        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">위치 : 정보관 3층</a>
+        </article>
+
+        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
+        <i class="fa tm-fa-6x  tm-color-primary tm-margin-b-20"><img src="img/3.PNG"></i>
+        <h3 class="tm-color-primary tm-article-title-1">멀티미디어실</h3>
+        <p>아레테 홀 내 위치하며 각종 멀티미디어 자료의 열람 및 인터넷 검색, 프린터(유료) 출력을 지원합니다.</p>
+        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">위치 : 정보관 3층</a>
+        </article>
+
+       <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
+       <i class="fa tm-fa-6x  tm-color-primary tm-margin-b-20"><img src="img/4.PNG"></i>
+       <h3 class="tm-color-primary tm-article-title-1">Group Study Room</h3>
+       <p>아레테 홀 내 위치하며 토론, 학습 등을 할 수 있는 공간으로 4개실이 있습니다.도서관 홈페이지에서 예약 후 이용</p>
+       <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">위치 : 정보관 3층</a>
+       </article>
+
+       <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
+       <i class="fa tm-fa-6x tm-color-primary tm-margin-b-20"><img src="img/5.PNG"></i>
+       <h3 class="tm-color-primary tm-article-title-1">시네마 존</h3>
+       <p>아레테 홀 내 위치하며 영화, 다큐, 시사 등을 시청하기 위한 공간으로 2개실이 있습니다.도서관 홈페이지에서 예약 후 이용</p>
+       <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">위치 : 정보관 3층</a>
+       </article>
+
+       <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
+       <i class="fa tm-fa-6x  tm-color-primary tm-margin-b-20"><img src="img/6.PNG"></i>
+       <h3 class="tm-color-primary tm-article-title-1">도서대출실</h3>
+       <p>단행본 자료 중 전공도서, 각종 자격증, 사회과학, 순수과학, 기술과학, 예술, 어학 등에 관한 자료의 대출 및 반납을 지원합니다.</p>
+       <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">위치 : 정보관 2층</a>
+       </article>
+       </div>
+       </div>
+       </div>
+
+   <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-4">
+   <div class="container">
+   <div class="row">
+   <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+   <div class="tm-article-carousel">
+   <article class="tm-bg-white mr-2 tm-carousel-item">
+   <img src="img/img-01.jpg" alt="Image" class="img-fluid">
+
+   <div class="tm-article-pad">
+   <header><h3 class="text-uppercase tm-article-title-2"><mark>여행의 이유</mark></h3></header>
+   <p>
+   <b>저자사항:</b>&ensp;김영하<br>
+   <b>출판사항:</b>&ensp;문학동네<br>
+   <b>발매:</b>&ensp;2019.04.17<br>
+   <b>책소개:</b>&nbsp;
+   		여행이 내 인생이었고, 인생이 곧 여행이었다!<br>
+                  여행의 감각을 일깨우는 소설가 김영하의 매혹적인 이야기 『여행의 이유』. 꽤 오래전부터 여행에 대해 쓰고 싶었던 저자가
+                  처음 여행을 떠났던 순간부터 최근의 여행까지 자신의 모든 여행의 경험을 담아 써내려간 아홉 개의 이야기를 담은 책이다.
+                  지나온 삶에서 글쓰기와 여행을 가장 많이, 열심히 해온 저자는 여행이 자신에게 무엇이었는지, 무엇이었기에 그렇게 꾸준히 다녔던 것인지,
+                  인간들은 왜 여행을 하는지, 스스로에게 질문을 던졌고, 여행의 이유를 찾아가며 그 답을 알아가고자 한다.
+   </p>
+   <a href="#" class="text-uppercase btn-primary tm-btn-primary">상세보기</a>
+   </div>
+   </article>
+
+   <article class="tm-bg-white mr-2 tm-carousel-item">
+   <img src="img/img-02.jpg" alt="Image" class="img-fluid">
+   <div class="tm-article-pad">
+   <header><h3 class="text-uppercase tm-article-title-2"><mark>고요할수록 밝아지는 것들</mark></h3></header>
+   <p>
+   <b>저자사항:</b>&ensp;혜민<br>
+   <b>출판사항:</b>&ensp;수오서재<br>
+   <b>발매:</b>&ensp;2018.12.05<br>
+   <b>책소개:</b>&ensp;
+   	 	『멈추면, 비로소 보이는 것들』로 자신을 돌아보는 계기를, 『완벽하지 않은 것들에 대한 사랑』으로 나와 타인과 세상에 대한 깊은 이해를 선사한 혜민 스님의 신작 에세이.
+    	 혜민 스님의 행복 지침서 3부작의 완성이라 할 수 있는 이 책은 분주하고 복잡하고 소란한 세상, 그 안에서 내가 누구인지,
+                  진짜 하고 싶은 일은 무엇인지 나 자신을 잃어가는 현대인들을 위한 메시지를 담았다.
+ 		마음이 고요해질 때 비로소 드러나는 내 안의 소망, 진정 꿈꾸는 삶의 방향과 가치를 찾는 계기,
+  		혹은 오랫동안 눌러놓았던 감정과 기억으로부터 치유되는 계기가 될 것이다.
+  		‘고요함은 나에게 주는 가장 큰 선물’이라는 저자의 말처럼 나 자신을 찾고 싶은 이들에게 이 책은 ‘나에게로 가는 길’의 안내서가 되어줄 것이다.
+   </p>
+   <a href="#" class="text-uppercase btn-primary tm-btn-primary">상세보기</a>
+   </div>
+   </article>
+
+   <article class="tm-bg-white mr-2 tm-carousel-item">
+   <img src="img/나는 나로 살기로 했다..png" alt="Image" class="img-fluid">
+   <div class="tm-article-pad">
+   <header><h3 class="text-uppercase tm-article-title-2"><mark>나는 나로 살기로 했다</mark></h3></header>
+   <p>
+   <b>저자사항:</b>&ensp;김수현<br>
+   <b>출판사항:</b>&ensp;마음의숲<br>
+   <b>발매:</b>&ensp;2016.11.25<br>
+   <b>책소개:</b>&ensp;
+       	이 책은 우리가 온전한 ‘나’로 살아가기 위해 무엇이 필요한지 말해준다.
+     	돈 많고 잘나가는 타인의 SNS를 훔쳐보며 비참해질 필요 없고, 스스로에게 변명하고 모두에게 이해받으려 애쓰지 말라고 이야기한다.
+    	불안하다고 무작정 열심히 할 필요 없고, 세상의 정답에 굴복하지 말라고 응원한다.
+   		인생의 지나가는 사람들에게 더 이상 상처받지 말고, 누군가의 말에 흔들리지 말고, 자신만의 문제라고 착각하지 말라고.
+  		우리에게 가장 필요한 말, 나답게 살라고 말한다.
+   </p>
+   <a href="#" class="text-uppercase btn-primary tm-btn-primary">상세보기</a>
+   </div>
+   </article>
+
+   <article class="tm-bg-white mr-2 tm-carousel-item">
+   <img src="img/img-02.jpg" alt="Image" class="img-fluid">
+   <div class="tm-article-pad">
+   <header><h3 class="text-uppercase tm-article-title-2"><mark>90년생이 온다.</mark></h3></header>
+   <p>
+   <b>저자사항:</b>&ensp;임홍택<br>
+   <b>출판사항:</b>&ensp;웨일북<br>
+   <b>발매:</b>&ensp;2018.11.16<br>
+   <b>책소개:</b>&ensp;
+        	 이 책은 몰려오는 그들과 공존하기 위해 이해하기 어려워도 받아들여야 할 것들을 담았다.
+         	 이를 통해 각 산업의 마케터는 새로운 고객을 이해하기 위한 툴과 인사이트를 얻을 수 있을 것이고,
+         	 기업의 담당자는 본격적으로 기업에 입사하는 세대를 위한 실질적인 인사 관리 가이드와 그들의 잠재력을 이끌어내는 방안도 살펴볼 수 있을 것이다.
+  </p>
+  <a href="#" class="text-uppercase btn-primary tm-btn-primary">상세보기</a>
+  </div>
+  </article>
+
+  <article class="tm-bg-white mr-2 tm-carousel-item">
+  <img src="img/img-01.jpg" alt="Image" class="img-fluid">
+  <div class="tm-article-pad">
+  <header><h3 class="text-uppercase tm-article-title-2"><mark>철학은 어떻게 삶의 무기가 되는가</mark></h3></header>
+  <p>
+  <b>저자사항:</b>&ensp;야마구치슈 저/김윤경 역<br>
+  <b>출판사항:</b>&ensp;다산초당<br>
+  <b>발매:</b>&ensp;2019.01.22<br>
+  <b>원재:</b> &ensp;武器になる哲學 人生を生き拔くための哲學.思想のキ-コンセプト<br>
+  <b>책소개:</b>&ensp;
+           	철학이 현실 세계와 동떨어진 학문이라는 말을 강하게 부정하는 저자는 사람들이 철학을 쓸모없다고 여기는 이유가 철학과 비즈니스를 연결시켜서 생각하는 법을 모르기 때문이라고 진단한다.
+        	오히려 그는 본질을 꿰뚫고 최적의 솔루션을 찾아내는 철학적 사고법이야말로 현대인들에게 가장 필요한 무기라고 말한다.
+   			그가 비즈니스 현장에서 유용하게 사용하는 50가지 철학·사상을 담은 『철학은 어떻게 삶의 무기가 되는가』는 철학의 쓸모를 새롭게 조명하는 세상에서 가장 실용적인 철학 사용 설명서다.
+  </p>
+  <a href="#" class="text-uppercase btn-primary tm-btn-primary">상세보기</a>
+  </div>
+  </article>
+
+  <article class="tm-bg-white tm-carousel-item">
+  <img src="img/img-02.jpg" alt="Image" class="img-fluid">
+  <div class="tm-article-pad">
+  <header><h3 class="text-uppercase tm-article-title-2"><mark>아주 작은 습관의 힘</mark></h3></header>
+  <p>
+  <b>저자사항:</b>&ensp;제임스 클리어<br>
+  <b>출판사항:</b>&ensp;비즈니스북스<br>
+  <b>발매:</b>&ensp;2019.02.26<br>
+  <b>원재:</b>&ensp;ATOMIC HABITS<br>
+  <b>책소개:</b>&ensp;
+               	저자는 이 책에서 자신의 생생한 경험과 생물학, 뇌과학, 심리학의 최신 연구 결과를 집약해서 습관 하나로 인생을 변화시킬 수 있는 노하우를 제시한다.
+          		저자는 더 나은 습관을 세우는 계획에 대해 단계별로 소개한다. 습관을 만들기 위해서는 결심이 분명해야 하고(제1법칙), 매력적이어야 하며(제2법칙), 쉬워야 하고(제3법칙), 만족스러워 하는데(제4법칙),
+          		이 네 가지 법칙을 바탕으로 어떻게 하면 빠르고, 효율적이고, 확실하게 변화할 수 있는지 알려준다.
+  </p>
+  <a href="#" class="text-uppercase btn-primary tm-btn-primary">상세보기</a>
+  </div>
+  </article>
+  </div>
+  </div>
+
+  <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-recommended-container">
+  <div class="tm-bg-white">
+  <div class="tm-bg-primary tm-sidebar-pad">
+  <h3 class="tm-color-white tm-center-title"><b>이달의 독서왕이 많은과</b></h3>
+  <p class="tm-color-white tm-margin-b-0 tm-font-light"><한 권의 책을 읽음으로써 자신의 삶에서 새 시대를 본 사람은 너무나 많다.></p>
+
+
+  </div>
+  <div class="tm-sidebar-pad-2">
+  <a href="#" class="media tm-media tm-recommended-item">
+  <img src="img/tn-img-01.jpg" alt="Image">
+  <div class="media-body tm-media-body tm-bg-gray">
+  <h4 class="tm-font-semibold tm-sidebar-item-title">컴퓨터정보과</h4>
+  </div>
+  </a>
+  <a href="#" class="media tm-media tm-recommended-item">
+  <img src="img/tn-img-02.jpg" alt="Image">
+  <div class="media-body tm-media-body tm-bg-gray">
+  <h4 class="tm-font-semibold tm-sidebar-item-title">간호학과</h4>
+  </div>
+  </a>
+  <a href="#" class="media tm-media tm-recommended-item">
+  <img src="img/tn-img-03.jpg" alt="Image">
+  <div class="media-body tm-media-body tm-bg-gray">
+  <h4 class="tm-font-semibold tm-sidebar-item-title">건축학과</h4>
+  </div>
+  </a>
+  <a href="#" class="media tm-media tm-recommended-item">
+  <img src="img/tn-img-04.jpg" alt="Image">
+  <div class="media-body tm-media-body tm-bg-gray">
+  <h4 class="tm-font-semibold tm-sidebar-item-title">자동차학과<br></h4>
+  </div>
+  </a>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+            <div class="tm-bg-video">
+                <div class="overlay">
+                    <i class="fa fa-5x fa-play-circle tm-btn-play"></i>
+                    <i class="fa fa-5x fa-pause-circle tm-btn-pause"></i>
+                </div>
+                <video controls="" loop="" class="tmVideo">
+                    <source src="videos/video.mp4" type="video/mp4">
+                    <source src="videos/video.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="tm-section tm-section-pad tm-bg-img" id="tm-section-5">
+                    <div class="container ie-h-align-center-fix">
+                        <div class="row tm-flex-align-center">
+                            <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 tm-media-title-container">
+                                <h2 class="text-uppercase tm-section-title-2">ASIA</h2>
+                                <h3 class="tm-color-primary tm-font-semibold tm-section-subtitle-2">Singapore</h3>
+                            </div>
+                            <div class="col-xs-12 col-md-12 col-lg-9 col-xl-9 mt-0 mt-sm-3">
+                                <div class="ml-auto tm-bg-white-shadow tm-pad tm-media-container">
+                                    <article class="media tm-margin-b-20 tm-media-1">
+                                        <img src="img/img-03.jpg" alt="Image">
+                                        <div class="media-body tm-media-body-1 tm-media-body-v-center">
+                                            <h3 class="tm-font-semibold tm-color-primary tm-article-title-3">Suspendisse vel est libero sem phasellus ac laoreet</h3>
+                                            <p>Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non.
+                                            <br><br>
+											Etiam aliquam arcu at mauris consectetur scelerisque. Integer elementum justo in orci facilisis ultricies. Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida.</p>
+                                        </div>
+                                    </article>
+                                    <article class="media tm-margin-b-20 tm-media-1">
+                                        <img src="img/img-04.jpg" alt="Image">
+                                        <div class="media-body tm-media-body-1 tm-media-body-v-center">
+                                            <h3 class="tm-font-semibold tm-article-title-3">Suspendisse vel est libero sem phasellus ac laoreet</h3>
+                                            <p>Duis accumsan sagittis tortor in ultrices. Praesent tortor ante, fringilla ac nibh porttitor, fermentum commodo nulla.</p>
+                                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                                        </div>
+                                    </article>
+                                    <article class="media tm-margin-b-20 tm-media-1">
+                                        <img src="img/img-05.jpg" alt="Image">
+                                        <div class="media-body tm-media-body-1 tm-media-body-v-center">
+                                            <h3 class="tm-font-semibold tm-article-title-3">Faucibus dolor ligula nisl metus auctor aliquet</h3>
+                                            <p>Nunc in felis aliquet metus luctus iaculis vel et nisi. Nulla venenatis nisl orci, laoreet ultricies massa tristique id.</p>
+                                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tm-section tm-section-pad tm-bg-img tm-position-relative" id="tm-section-6">
+                <div class="container ie-h-align-center-fix">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-7">
+                            <div id="google-map"></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-5 mt-3 mt-md-0">
+                            <div class="tm-bg-white tm-p-4">
+                                <form action="index.html" method="post" class="contact-form">
+                                    <div class="form-group">
+                                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary tm-btn-primary">Send Message Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="tm-bg-dark-blue container-fluid hidden-xs pc-footer">
+    <div class="footer-wrap">
+    <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
+        <p class="address">(47230) 부산광역시 부산진구 양지로 54(양정동)</p>
+        <p class="address">TEL : 051-860-3060, 051-860-3062~4&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;FAX : 051-860-3278</p>
+        <p class="copy">&copy; 2011 DONG-EUI INSTITUTE OF TECHNOLOGY LIBRARY. All rights reserved.</p></div></footer>
+        </div>
+
+
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->
+        <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+        <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+        <script>
+
+            /* Google map
+            ------------------------------------------------*/
+            var map = '';
+            var center;
+
+            function initialize() {
+                var mapOptions = {
+                    zoom: 13,
+                    center: new google.maps.LatLng(-23.013104,-43.394365),
+                    scrollwheel: false
+                };
+
+                map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+
+                google.maps.event.addDomListener(map, 'idle', function() {
+                  calculateCenter();
+              });
+
+                google.maps.event.addDomListener(window, 'resize', function() {
+                  map.setCenter(center);
+              });
+            }
+
+            function calculateCenter() {
+                center = map.getCenter();
+            }
+
+            function loadGoogleMap(){
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                //script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
+                document.body.appendChild(script);
+            }
+
+            function setCarousel() {
+
+                if ($('.tm-article-carousel').hasClass('slick-initialized')) {
+                    $('.tm-article-carousel').slick('destroy');
+                }
+
+                if($(window).width() < 438){
+                    // Slick carousel
+                    $('.tm-article-carousel').slick({
+                        infinite: false,
+                        dots: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    });
+                }
+                else {
+                 $('.tm-article-carousel').slick({
+                        infinite: false,
+                        dots: true,
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    });
+                }
+            }
+
+            function setPageNav(){
+                if($(window).width() > 991) {
+                    $('#tm-top-bar').singlePageNav({
+                        currentClass:'active',
+                        offset: 79
+                    });
+                }
+                else {
+                    $('#tm-top-bar').singlePageNav({
+                        currentClass:'active',
+                        offset: 65
+                    });
+                }
+            }
+
+            function togglePlayPause() {
+                vid = $('.tmVideo').get(0);
+
+                if(vid.paused) {
+                    vid.play();
+                    $('.tm-btn-play').hide();
+                    $('.tm-btn-pause').show();
+                }
+                else {
+                    vid.pause();
+                    $('.tm-btn-play').show();
+                    $('.tm-btn-pause').hide();
+                }
+            }
+
+            $(document).ready(function(){
+
+                $(window).on("scroll", function() {
+                    if($(window).scrollTop() > 100) {
+                        $(".tm-top-bar").addClass("active");
+                    } else {
+                        //remove the background property so it comes transparent again (defined in your css)
+                       $(".tm-top-bar").removeClass("active");
+                    }
+                });
+
+                // Google Map
+                loadGoogleMap();
+
+                // Date Picker
+                const pickerCheckIn = datepicker('#inputCheckIn');
+                const pickerCheckOut = datepicker('#inputCheckOut');
+
+                // Slick carousel
+                setCarousel();
+                setPageNav();
+
+                $(window).resize(function() {
+                  setCarousel();
+                  setPageNav();
+                });
+
+                // Close navbar after clicked
+                $('.nav-link').click(function(){
+                    $('#mainNav').removeClass('show');
+                });
+
+                // Control video
+                $('.tm-btn-play').click(function() {
+                    togglePlayPause();
+                });
+
+                $('.tm-btn-pause').click(function() {
+                    togglePlayPause();
+                });
+
+                // Update the current year in copyright
+                $('.tm-current-year').text(new Date().getFullYear());
+            });
+
+        </script>
+
+</body>
+</html>
